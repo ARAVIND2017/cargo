@@ -37,17 +37,17 @@ git pull https://github.com/ARAVIND2017/cargo.git
 docker-compose up -d
 ```
 💻 Running Manually on Localhost (Without Docker)
-Step 1: Clone the Repository
-git clone https://github.com/<your-username>/spacestorage-manager.git
+'''Step 1: Clone the Repository
+git clone https://github.com/ARAVIND2017/spacestorage-manager.git
 cd spacestorage-manager
-Step 2: Run Backend Server
+'''Step 2: Run Backend Server
 Navigate to the backend folder:cd backend
 Run the Flask server:python run_flask.py
-⚠️ Ensure Python and required packages (Flask, etc.) are installed.
+'''⚠️ Ensure Python and required packages (Flask, etc.) are installed.
  Step 3: Run Frontend Application
  Navigate to the frontend folder:cd ../frontend
  Install dependencies:npm install
  Run the development server:npm run dev
-❗ If you encounter an error related to tsx, run:npm install --save-dev tsx
+'''❗ If you encounter an error related to tsx, run:npm install --save-dev tsx
 Then rerun:npm run dev
 
