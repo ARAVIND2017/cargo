@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    image: aravind0217/spacestorage_api:latest
+    container_name: backend_container
+    ports:
+      - "8000:8000"
+    restart: always
+    networks:
+      - spacenet
+
+  frontend:
+    image: aravind0217/spacestorage_app:latest
+    container_name: frontend_container
+    ports:
+      - "5000:5000"
+    depends_on:
+      - backend
+    restart: always
+    networks:
+      - spacenet
+
+networks:
+  spacenet:
+    driver: bridge
