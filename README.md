@@ -3,6 +3,7 @@
 **SpaceStorage Manager** is a containerized full-stack web application designed to manage and optimize storage systems. It includes a React-based frontend and a Python backend with MongoDB as the database. The entire setup is Dockerized for easy deployment and scalability.
 
 spacestorage-manager/
+
 ├── backend/               # Python Backend Flask
 │   └── Dockerfile
 │
