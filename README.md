@@ -32,3 +32,7 @@ docker run -d -p 8000:8000 --name backend_container aravind0217/spacestorage_api
 If you want to run whole application then you can run the docker compose file with following commands:
 
 ```bash
+git pull https://github.com/ARAVIND2017/cargo.git
+
+docker-compose up -d
+```
