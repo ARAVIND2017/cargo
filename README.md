@@ -35,3 +35,25 @@ If you want to run whole application then you can run the docker compose file wi
 git pull https://github.com/ARAVIND2017/cargo.git
 
 docker-compose up -d
+
+
+
+---
+
+## 📡 API Endpoints
+
+### 1. `/placement` – POST
+Optimizes placement of cargo items in available containers.
+
+**Request**
+```json
+{
+  "items": [...],
+  "containers": [...]
+}
+
+response
+{
+  "placements": [...]
+}
+
