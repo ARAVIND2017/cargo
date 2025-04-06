@@ -37,6 +37,7 @@ If you want to run whole application then you can run the docker compose file wi
 git pull https://github.com/ARAVIND2017/cargo.git
 
 docker-compose up -d
+```
 
 
 
@@ -45,6 +46,7 @@ docker-compose up -d
 ---
 
 ## 📡 API Endpoints
+```
 
 ### 1. `/placement` – POST  
 Optimizes placement of cargo items in available containers.
@@ -85,8 +87,10 @@ Request
     }
   ]
 }
+```
 
 Response
+```
 {
   "placements": [
     {
@@ -99,10 +103,12 @@ Response
     }
   ]
 }
+```
 
 
 2. /search – POST
 Searches for cargo items or containers by ID or name.
+```
 
 Request
 {
@@ -123,15 +129,19 @@ Response
     }
   ]
 }
+```
 
 
 3. /simulate – POST
 Runs a simulation using built-in mock data.
+```
 
 Request
 // No payload required
+```
 
 Response
+```
 {
   "status": "success",
   "placements": [
@@ -145,10 +155,12 @@ Response
     }
   ]
 }
+```
 
 
 4. /waste – GET
 Retrieves unused volume, empty zones, and container stats.
+```
 
 Request
 {
@@ -167,4 +179,5 @@ Request
     }
   ]
 }
+```
 
